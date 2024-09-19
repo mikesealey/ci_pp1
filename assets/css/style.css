@@ -1,3 +1,14 @@
-.test {
-    background-color: lime;
+
+/* Logo & Nav */
+.fa-cake-candles {
+    font-size: 400px;
+}
+
+.nav-links-container {
+    border: 3px solid #808080;
+}
+
+.nav-links-container a {
+    text-decoration: none;
+    
 }
