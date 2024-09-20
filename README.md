@@ -11,3 +11,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
 
 The next step was to make the images hold their proportions, and simply hide their irregular shapes and resolutions, using `object-fit: cover`
 
+### Bootstap Documentation
+#### Modals
+I took the example Static Backdrop modal and stripped a few things out out - I think this was intended for user-prompts but I'll be using it for simply displaying more information about the clicked-image.
