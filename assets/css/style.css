@@ -24,6 +24,8 @@
 /* Modals */
 .modal-image {
     max-width: 100%;
+    border-radius: 2px;
+
 }
 
 .modal-content p {
@@ -49,4 +51,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+.modal-content, .modal-header, .modal-title {
+    border: none;
+}
+
 
