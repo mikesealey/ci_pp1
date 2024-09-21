@@ -25,3 +25,28 @@
 .modal-image {
     max-width: 100%;
 }
+
+.modal-content p {
+    padding: 0 20px;
+    border: 0;
+}
+
+.dietary-requirements {
+    list-style-type: none;
+}
+
+.dietary-requirements li i {
+    padding: 0 5px 0 0;
+}
+
+.modal-close-button {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 15px 15px 0;
+}
+
+.modal-lower-content {
+    display: flex;
+    justify-content: space-between;
+}
+
