@@ -5,6 +5,10 @@ nav {
     border: 3px solid red;
 }
 
+.smaller {
+    border: 10px solid lime;
+}
+
 .fa-cake-candles {
     font-size: 400px;
 }

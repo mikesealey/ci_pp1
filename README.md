@@ -17,6 +17,17 @@ I took the example Static Backdrop modal and stripped a few things out out - I t
 
 I'd managed to get mixed up between versions of bootstrap - the attribute to dismiss a modal in certain versions Bootstrap is data-bs-dismiss="modal", but data-dismiss="modal" is the correct one for the version I'm using. That'll teach me to lift code out of the example in the documenation!
 
+### Adding JavaScript
+The desktop version of Totally Baked Cake Co features a landing page with an oversized logo and navigation menu, that I wanted to shrink to a more typical size into the top-left of the screen once the user has begun to scroll.
+
+In order to do this I needed to first link `.js` file, and make use of the `document.getElementById()` function in JavaScript. I then need to add a class name to the element(s). 
+
+Two good examples that helped:
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+* [W3Schools](https://www.w3schools.com/howto/howto_js_add_class.asp)
+
+I also need to tie into the "scroll" event with an event listener found in this example in the MDN docs [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
+
 ## Design Considerations
 ### Creating a wireframe
 
