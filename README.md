@@ -14,3 +14,10 @@ The next step was to make the images hold their proportions, and simply hide the
 ### Bootstap Documentation
 #### Modals
 I took the example Static Backdrop modal and stripped a few things out out - I think this was intended for user-prompts but I'll be using it for simply displaying more information about the clicked-image.
+
+I'd managed to get mixed up between versions of bootstrap - the attribute to dismiss a modal in certain versions Bootstrap is data-bs-dismiss="modal", but data-dismiss="modal" is the correct one for the version I'm using. That'll teach me to lift code out of the example in the documenation!
+
+## Design Considerations
+### Creating a wireframe
+
+### Once building was underway
