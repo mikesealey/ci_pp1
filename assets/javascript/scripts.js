@@ -2,21 +2,18 @@ let myFunction = () => {
     console.log("function called!")
 }
 
-// window.addEventListener("scroll", () => {
-//     console.log(window.scrollY)
-//     let nav = document.getElementById("nav")
-//     let icon = document.getElementById("icon")
-//     if (window.scrollY > 100 & !nav.classList.contains("smaller") & !icon.classList.contains("smaller")) {
-//         nav.classList.add("smaller")
-//         nav.classList.add("smaller")
-//     } else {
-//         nav.classList.remove("smaller")
-//         nav.classList.remove("smaller")
-//     }
-    
-    
-// });
+const navigation = document.getElementById("nav");
+const navigationLogo = document.getElementById("nav-logo")
 
-// When scrolling, if the nav does not currently contain the class "smaller", add the class "smaller"
+window.onscroll = function() {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
 
-// Find a way to shrink this by a 
+    // Calculate the new width based on scroll position
+    const newWidth = Math.max(120, 600 - 0.6 * scrollY); // Ensures the width doesn't go below 120px
+
+    // Apply the new width to both the nav and the logo
+    navigation.style.width = newWidth + "px";
+    navigationLogo.style.width = newWidth + "px";
+};
+
+

@@ -3,6 +3,13 @@ nav {
     margin: 20px;
     position: sticky;
     top: 0;
+
+}
+
+#nav-logo {
+    width: 600px;
+    border: 1px solid pink;
+    border-radius: 20%;
 }
 
 .smaller {
@@ -10,10 +17,6 @@ nav {
     font-size: 30px;
     border: 1px solid lime;
     color: pink;
-}
-
-.fa-cake-candles {
-    font-size: 700px;
 }
 
 .nav-links-container {
