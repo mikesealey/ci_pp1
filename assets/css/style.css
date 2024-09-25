@@ -1,4 +1,3 @@
-
 /* Logo & Nav */
 nav {
     margin: 20px;
@@ -6,11 +5,14 @@ nav {
 }
 
 .smaller {
-    border: 10px solid lime;
+    width: 5%;
+    font-size: 30px;
+    border: 1px solid lime;
+    color: pink;
 }
 
 .fa-cake-candles {
-    font-size: 400px;
+    font-size: 800px;
 }
 
 .nav-links-container {
@@ -18,9 +20,30 @@ nav {
 }
 
 .nav-links-container a {
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
+
+.current-page {
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.list-group-item {
+    border: 0;
+    padding: 10px 20px;
+}
+
+.list-group-item > * {
+    color: rgb(80, 80, 80);
+}
+
+
 
 /* Homepage Gallery */
 /* revisit this to check if still needed */
