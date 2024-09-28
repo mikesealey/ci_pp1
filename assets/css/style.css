@@ -1,13 +1,20 @@
 /* Logo & Nav */
 nav {
+    padding: 20px;
     margin: 20px;
     position: sticky;
-    top: 0;
+    top: 0px;
+    border: 10px solid navy;
+    width: 100%;
+    z-index: 10;
+}
 
+#nav-structure {
+    height: 750px
 }
 
 #nav-logo {
-    width: 600px;
+    width: 40%;
     border: 1px solid pink;
     border-radius: 20%;
 }
@@ -38,6 +45,7 @@ footer {
     align-items: center;
     position: sticky;
     bottom: 0;
+    border: 1px solid lime;
 }
 
 .list-group-item {

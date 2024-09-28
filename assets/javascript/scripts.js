@@ -3,17 +3,19 @@ let myFunction = () => {
 }
 
 const navigation = document.getElementById("nav");
-const navigationLogo = document.getElementById("nav-logo")
 
 window.onscroll = function() {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
 
-    // Calculate the new width based on scroll position
-    const newWidth = Math.max(120, 600 - 0.6 * scrollY); // Ensures the width doesn't go below 120px
+    // Math.max takes arguments and returns whichever is the highest 
+    // This prevents the size% going lower than 15%
+    const newWidthPercentage = Math.max(15, 100 - (85 * scrollY / 700)); // Shrinks from 100% to 15%
 
-    // Apply the new width to both the nav and the logo
-    navigation.style.width = newWidth + "px";
-    navigationLogo.style.width = newWidth + "px";
-};
+    navigation.style.width = Math.round(newWidthPercentage) + "%";
+    console.log(newWidthPercentage, scrollY)
+  };
 
+addEventListener("load", (event) => {
+    console.log("Page loaded!")
+})
 
