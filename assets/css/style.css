@@ -1,17 +1,27 @@
+/* Hail Mary */
+* {
+    scroll-behavior: smooth;
+}
+
 /* Logo & Nav */
 nav {
     padding: 20px;
-    margin: 20px;
+    padding: 20px;
     position: sticky;
-    top: 0px;
-    border: 10px solid navy;
+    top: 25px;
+    border: 1px solid navy;
     width: 100%;
     z-index: 10;
+    transition-duration: 1s;
 }
 
-#nav-structure {
-    height: 750px
+.nav-smaller {
+    border: 3px solid lime;
+    transform: translate(-45%, -45%) scale(15%);
+    transition-duration: 1s;
 }
+
+
 
 #nav-logo {
     width: 40%;
@@ -45,7 +55,6 @@ footer {
     align-items: center;
     position: sticky;
     bottom: 0;
-    border: 1px solid lime;
 }
 
 .list-group-item {
