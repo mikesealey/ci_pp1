@@ -10,49 +10,80 @@
         <link href="../css/style.css"rel="stylesheet">
         </head>
 <body>
-    <nav>
-        <!-- Navigation Links -->
-        <ul class="nav-links-container list-unstyled list-group list-group-horizontal justify-content-center" style="max-width: 400px; margin: 0 auto;">
-            <li class="list-group-item text-center flex-fill">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="list-group-item text-center flex-fill">::</li>
-            <li class="list-group-item text-center flex-fill">
-                <a href="about.html">About</a>
-            </li>
-            <li class="list-group-item text-center flex-fill">::</li>
-            <li class="list-group-item text-center flex-fill">
-                <a href="contact.html" class="current-page">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <section>
-        <h1>
-            Contact Us
-        </h1>
-        <p></p>
-    </section>
-    <footer>
-        <ul class="list-unstyled list-group list-group-horizontal">
-            <li class="list-group-item ">
-                <a href="https://www.facebook.com"target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li class="list-group-item">
-                <a href="https://www.instagram.com"target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li class="list-group-item">
-                <a href="https://www.twitter.com"target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li class="list-group-item">
-                <a href="https://www.youtube.com"target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-            <li class="list-group-item">
-                <a href="https://www.linkedin.com"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li class="list-group-item">
-                <a href="https://www.etsy.com"target="_blank"><i class="fa-brands fa-etsy"></i></a>
-            </li>
-        </ul>
-    </footer><!-- End of Footer -->
+        <nav>
+            <!-- Navigation Links -->
+            <ul class="nav-links-container list-unstyled list-group list-group-horizontal justify-content-center" style="max-width: 400px; margin: 0 auto;">
+                <li class="list-group-item text-center flex-fill">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="list-group-item text-center flex-fill">::</li>
+                <li class="list-group-item text-center flex-fill">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="list-group-item text-center flex-fill">::</li>
+                <li class="list-group-item text-center flex-fill">
+                    <a href="contact.html" class="current-page">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="container contact-form mb-4">
+                <h1 class="mt-4 mb-4">
+                    Contact Us
+                </h1>
+                <form method="get" action="confirmation.html" class="col-12">
+                    <div class="">
+                        <label for="your-name">Hi, My name is </label> 
+                        <input type="text" id="your-name" name="your-name" value="customer-name">
+                    </div>
+                    <p>I'd like to know more about...</p>
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <label for="general">Totally Baked Cake Co.</label>
+                            <input type="radio" id="general" name="enquiry-type" value="general">
+                        </div>
+                        <div class="col-4 text-center">
+                            <label for="sales-comission">buying or comissioning a cake</label>
+                            <input type="radio" id="sales-comission" name="enquiry-type" value="sales-comission"> 
+                        </div>
+                        <div class="col-4 text-center">
+                            <label for="dietary">dietary specifications</label>
+                            <input type="radio" id="dietary" name="enquiry-type" value="dietary" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="info">Specifically, here's what I'd like to know</label>
+                        <input type="text" id="info" name="info" value="info" placeholder="Please provide more information" class="col-10">
+                    </div>
+                    <div>
+                        <label for="email">Please get back to me on this email address:</label>
+                        <input type="text" id="email" name="email" value="email" placeholder="user@domain.co.uk">
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <ul class="list-unstyled list-group list-group-horizontal">
+                <li class="list-group-item ">
+                    <a href="https://www.facebook.com"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.instagram.com"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.twitter.com"target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.youtube.com"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.linkedin.com"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.etsy.com"target="_blank"><i class="fa-brands fa-etsy"></i></a>
+                </li>
+            </ul>
+        </footer><!-- End of Footer -->
 </body>
 </html>
