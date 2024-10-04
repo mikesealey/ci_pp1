@@ -1,14 +1,9 @@
-/* Hail Mary */
-* {
-    scroll-behavior: smooth;
-}
-
 /* Logo & Nav */
 nav {
     padding: 20px;
     padding: 20px;
     position: sticky;
-    top: 25px;
+    top: 0;
     border: 1px solid navy;
     width: 100%;
     z-index: 10;
@@ -17,11 +12,15 @@ nav {
 
 .nav-smaller {
     border: 3px solid lime;
-    transform: translate(-45%, -45%) scale(15%);
+    transform: translate(-42.5%, -42.5%) scale(15%);
     transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
-
+.nav-links-smaller {
+    background-color: red;
+    width: 80% !important;
+}
 
 #nav-logo {
     width: 40%;
@@ -75,6 +74,17 @@ footer {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 } 
+#page-content {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.page-content-higher {
+    border: 3px solid orangered;
+    transform: translate(0, -600px);
+    transition-timing-function: ease-in-out;
+    
+}
 
 /* Modals */
 .modal-image {
@@ -111,4 +121,10 @@ footer {
     border: none;
 }
 
+/* Contact Page */
+.contact-form {
+    background-color: rgba(127, 127, 127, 0.2);
+    border: 2px solid #808080;
+    border-radius: 12px;
+}
 
