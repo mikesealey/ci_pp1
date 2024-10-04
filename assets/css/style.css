@@ -1,42 +1,12 @@
 /* Logo & Nav */
-nav {
-    padding: 20px;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    border: 1px solid navy;
-    width: 100%;
-    z-index: 10;
-    transition-duration: 1s;
-}
-
-.nav-smaller {
-    border: 3px solid lime;
-    transform: translate(-42.5%, -42.5%) scale(15%);
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}
-
-.nav-links-smaller {
-    background-color: red;
-    width: 80% !important;
-}
-
-#nav-logo {
-    width: 40%;
-    border: 1px solid pink;
+#logo-img img {
+    width: 30%;
     border-radius: 20%;
-}
-
-.smaller {
-    width: 5%;
-    font-size: 30px;
-    border: 1px solid lime;
-    color: pink;
 }
 
 .nav-links-container {
     border: 3px solid #808080;
+    background-color: rgba(127, 127, 127, 0.2);
 }
 
 .nav-links-container a {
