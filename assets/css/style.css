@@ -1,3 +1,7 @@
+div {
+    max-width: 100%;
+}
+
 /* Logo & Nav */
 #logo-img img {
     width: 30%;
@@ -6,7 +10,7 @@
 
 .nav-links-container {
     border: 3px solid #808080;
-    background-color: rgba(127, 127, 127, 0.2);
+
 }
 
 .nav-links-container a {
@@ -24,21 +28,28 @@ footer {
     align-items: center;
     position: sticky;
     bottom: 0;
+
 }
 
 .list-group-item {
     border: 0;
     padding: 10px 20px;
+
 }
 
 .list-group-item > * {
     color: rgb(80, 80, 80);
+
 }
 
+.text-box {
+    border: 3px solid #808080;
+    background-color: rgba(127, 127, 127, 0.2);
 
+
+}
 
 /* Homepage Gallery */
-/* revisit this to check if still needed */
 .standard-image {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -95,6 +106,16 @@ footer {
 .contact-form {
     background-color: rgba(127, 127, 127, 0.2);
     border: 2px solid #808080;
-    border-radius: 12px;
 }
 
+.radio-row {
+    border: 1px solid black;
+}
+
+.contact-form label {
+    border: 1px solid red;
+}
+
+.contact-form input {
+    border: 1px solid blue;
+}
