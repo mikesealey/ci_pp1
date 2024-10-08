@@ -46,8 +46,6 @@ footer {
 .text-box {
     border: 3px solid #808080;
     background-color: rgba(127, 127, 127, 0.2);
-    margin: 10%;
-
 }
 
 /* Homepage Gallery */
@@ -106,7 +104,6 @@ footer {
 /* Contact Page */
 .contact-form {
     background-color: rgba(127, 127, 127, 0.2);
-    border: 2px solid #808080;
 }
 
 .radio-row {
