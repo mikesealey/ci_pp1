@@ -10,6 +10,7 @@ div {
 
 .nav-links-container {
     border: 3px solid #808080;
+    max-width: 400px;
 
 }
 
@@ -45,7 +46,7 @@ footer {
 .text-box {
     border: 3px solid #808080;
     background-color: rgba(127, 127, 127, 0.2);
-
+    margin: 10%;
 
 }
 
