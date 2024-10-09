@@ -35,35 +35,36 @@
                 <h1 class="mt-4 mb-4">
                     Contact Us
                 </h1>
-                <form method="get" action="confirmation.html" class="col-12">
-                    <div class="">
-                        <label for="your-name">Hi, My name is </label> 
-                        <input type="text" id="your-name" name="your-name" value="customer-name">
+                
+                <form method="GET" action="confirmation.html" >
+                    <div class="form-row">
                     </div>
-                    <div class="row radio-row">
-                        <p>I'd like to know more about...</p>
-                        <div class="col-4 text-center">
-                            <label for="general">Totally Baked Cake Co.</label>
-                            <input type="radio" id="general" name="enquiry-type" value="general">
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-2">
+                            <label for="customer-name">Hi, my name is</label>
+                            <input type="text" class="form-control" id="customer" name="customer-name" placeholder="Bruce Bogtrotter">
                         </div>
-                        <div class="col-4 text-center">
-                            <label for="sales-comission">buying or comissioning a cake</label>
-                            <input type="radio" id="sales-comission" name="enquiry-type" value="sales-comission"> 
+                        <div class="form-group col-md-6 mb-2">
+                            <label for="enquiry-type">I'd like to know more about...</label>
+                            <select id="enquiry-type" class="form-control" name="enquiry-type">
+                                <option disabled selected>Please select</option>
+                                <option value="general">Totally Baked Cake Co, in general</option>
+                                <option value="dietary">Dietary requirements or specifications</option>
+                                <option value="purchasing">Purchasing or commissioning a cake</option>
+                            </select>
                         </div>
-                        <div class="col-4 text-center">
-                            <label for="dietary">dietary specifications</label>
-                            <input type="radio" id="dietary" name="enquiry-type" value="dietary" >
+                        <div class="form-group col-md-12 mb-2">
+                            <label for="enquiry">Specifically, I'd like to know more about...</label>
+                            <textarea class="form-control" id="enquiry" name="enquiry-details" rows="5" placeholder="...the secret ingredients"></textarea>
                         </div>
+                      </div>
+                      <div class="form-group col-md-6 mb-2">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="username@domain.com">
                     </div>
-                    <div class="row">
-                        <label for="info">Specifically, here's what I'd like to know</label>
-                        <input type="text" id="info" name="info" value="info" placeholder="Please provide more information" class="col-10">
+                      <div class="form-group mb-2" style="border: 1px solid white">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                    <div>
-                        <label for="email">Please get back to me on this email address:</label>
-                        <input type="text" id="email" name="email" value="email" placeholder="user@domain.co.uk">
-                    </div>
-                    <input type="submit" value="Submit">
                 </form>
             </div>
         </section>
