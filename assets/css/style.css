@@ -104,16 +104,6 @@ footer {
 /* Contact Page */
 .contact-form {
     background-color: rgba(127, 127, 127, 0.2);
+    padding: 10px;
 }
 
-.radio-row {
-    border: 1px solid black;
-}
-
-.contact-form label {
-    border: 1px solid red;
-}
-
-.contact-form input {
-    border: 1px solid blue;
-}
