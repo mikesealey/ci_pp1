@@ -2,6 +2,13 @@ div {
     max-width: 100%;
 }
 
+body {
+    background-image: url("../images/nathan-dumlao-KMEqlxz3mKc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 /* Logo & Nav */
 #logo-img img {
     width: 30%;
@@ -45,7 +52,7 @@ footer {
 
 .text-box {
     border: 3px solid #808080;
-    background-color: rgba(127, 127, 127, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     max-width: 1250px;
     padding: 10px;
 
