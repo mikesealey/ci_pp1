@@ -46,6 +46,9 @@ footer {
 .text-box {
     border: 3px solid #808080;
     background-color: rgba(127, 127, 127, 0.2);
+    max-width: 1250px;
+    padding: 10px;
+
 }
 
 /* Homepage Gallery */
