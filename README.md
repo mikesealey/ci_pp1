@@ -3,6 +3,16 @@ _A website dedicated to showing the finest baked goods in North Wales, as part o
 
 This project will borrow heavily from the real life bakery business by the name name, run by my sister, but will not seek to replace any existing business page, nor will it make any guarantees of factual accuracy with regards to ingredients, dietary requirements, or calarie content.
 
+## User Stories
+* As a user, I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
+* As a user, I want to be able to see larger versions of the thumbnails
+* As a user, I want to be able to see a description of each of the cakes on offer
+* As a user, I want to know about specific dietary concerns (Gluten/Wheat, Dairy, Egg, etc)
+* As a user, I should be able to find contact details
+* As a user, I should be able to find out more information about the origins of the bakery
+* As a user, I should be able to find out where the bakery is
+ a user, I should be able to submit an enquiry
+
 ## Code Sources
 ### MDN CSS Documentation
 #### Aspect Ratio and Object Fit
@@ -27,6 +37,8 @@ Two good examples that helped:
 * [W3Schools](https://www.w3schools.com/howto/howto_js_add_class.asp)
 
 I also need to tie into the "scroll" event with an event listener found in this example in the MDN docs [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
+
+
 
 ## Design Considerations
 ### Creating a wireframe
