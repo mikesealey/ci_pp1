@@ -29,8 +29,16 @@ This project will borrow heavily from the real life bakery business by the same 
 
 ## Design Considerations
 ### Creating a wireframe
+When Designing the website for Totally Baked Cake Co, I knew that the real heroes of the design would be the cakes themselves, so a gallery was the obvious way to go. I wanted to make sure that the gallery would display correctly accross a variety of devices, so when I was working on the wireframe I made sure to plan for desktop, tablet, and mobile views. 
+
+The basic principle was that the images would have a 1:1 aspect ratio in order to more easily accomodate portrait and landscape source images. The images could then be displayed in a grid where the screen width determins how many images go on each row.
+
+![alt text](<README assets/Screenshot 2024-10-16 223130.png>)
+
+
 
 ### Once building was underway
+I initially had an idea of having the logo and navigation form a hero image, and using an onScroll property of the window to resize or transform that to taket he place of a more typical logo in a header similar to that which would typically be found in most modern web applications. This turned out to be far too unreliable, and was ultimately scrapped. (Read more in [Adding JavaScript](#adding-javascript))
 
 ## Code Sources
 ### Mozilla Developer Network Documentation
