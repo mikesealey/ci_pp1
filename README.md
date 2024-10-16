@@ -3,7 +3,21 @@ _A website dedicated to showing the finest baked goods in North Wales, as part o
 
 This project will borrow heavily from the real life bakery business by the same name, run by my sister, but will not seek to replace any existing business page, nor will it make any guarantees of factual accuracy with regards to ingredients, dietary requirements, or calorie content.
 
+# Contents
+* [User Stories](#user-stories)
+* [Design Considerations](#design-considerations)
+  * [Creating a wireframe](#creating-a-wireframe)
+* [Code Sources](#code-sources)
+  * [Mozilla Developer Network](#mozilla-developer-network-css-documentation)
+    * [Aspect Ratio and Object Fit](#aspect-ratio-and-object-fit)
+  * [Bootstrap Documentation](#bootstap-documentation)
+    * [Modals](#modals)
+  * [Adding JavaScript](#adding-javascript)
+
+
+
 ## User Stories
+* As a user, I want to understand the purpose of the page when it loads
 * As a user, I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
 * As a user, I want to be able to see larger versions of the thumbnails
 * As a user, I want to be able to see a description of each of the cakes on offer
@@ -11,15 +25,21 @@ This project will borrow heavily from the real life bakery business by the same 
 * As a user, I should be able to find contact details
 * As a user, I should be able to find out more information about the origins of the bakery
 * As a user, I should be able to find out where the bakery is
- a user, I should be able to submit an enquiry
+* As a user, I should be able to submit an enquiry
+
+## Design Considerations
+### Creating a wireframe
+
+### Once building was underway
 
 ## Code Sources
-### MDN CSS Documentation
+### Mozilla Developer Network Documentation
 #### Aspect Ratio and Object Fit
 In order to make perfectly square images, but maintain the reactiveness of the site accross different screensizes, I've used a width property of 100% to fill the column, and then found an `aspect-ratio` rule that I can give a 1/1 ratio.
 https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
 
 The next step was to make the images hold their proportions, and simply hide their irregular shapes and resolutions, using `object-fit: cover`
+
 
 ### Bootstap Documentation
 #### Modals
@@ -42,9 +62,5 @@ After trying my best to make this work for a long time, I decided in [this commi
 
 When adding in a form and confirmation page I did manage to use a little bit of JavaScript though - I noticed that all of the values submitted in contact.html were available as URL parameters in confirmation.html. [This post](https://sentry.io/answers/how-to-get-values-from-urls-in-javascript/) gave a very quick insight, and with some tinkering I was able to bring the parameters in, assign them to variables, and set them as the text in elements using document.getElementByID. 
 
-![URL Parameters in action](<README assets/Screenshot 2024-10-16 215748.png>)
+<img src="README assets/Screenshot 2024-10-16 215748.png" style="max-width: 50%;">
 
-## Design Considerations
-### Creating a wireframe
-
-### Once building was underway
