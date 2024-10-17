@@ -22,16 +22,31 @@ body {
 
 .nav-links-container {
     border: 3px solid rgb(152, 186, 185);
+    border-radius: 10px;
     max-width: 400px;
+    background-color: rgb(215, 194, 213)
+}
 
+.nav-links-container li {
+    /* border-radius: 0 !important; */
 }
 
 .nav-links-container a {
     text-decoration: none; 
+    color: rgb(152, 186, 185);
 }
 
+
 .current-page {
-    font-weight: 700;
+    font-weight: 800;
+}
+
+.first-nav-item {
+    border-radius: 7px 0 0 7px !important;
+}
+
+.last-nav-item {
+    border-radius: 0 7px 7px 0 !important;
 }
 
 /* Footer */
