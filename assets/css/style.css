@@ -1,3 +1,6 @@
+/* Primary Green/blue - 152, 186, 185 */
+/* Secondary 215, 194, 213 */
+
 div {
     max-width: 100%;
 }
@@ -18,7 +21,7 @@ body {
 }
 
 .nav-links-container {
-    border: 3px solid #808080;
+    border: 3px solid rgb(152, 186, 185);
     max-width: 400px;
 
 }
@@ -53,7 +56,7 @@ footer {
 }
 
 .text-box {
-    border: 3px solid #808080;
+    border: 3px solid rgb(152, 186, 185);
     background-color: rgba(255, 255, 255, 0.4);
     max-width: 1250px;
     padding: 10px;
