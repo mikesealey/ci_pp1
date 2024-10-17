@@ -13,6 +13,10 @@ This project will borrow heavily from the real life bakery business by the same 
   * [Bootstrap Documentation](#bootstap-documentation)
     * [Modals](#modals)
   * [Adding JavaScript](#adding-javascript)
+* [Lighthouse Reports](#lighthouse-reports)
+  * [Performance](#performance)
+  * [Accessibility](#accessibility)
+* [Responsive Design](#responseive-design)
 
 
 
@@ -72,3 +76,16 @@ When adding in a form and confirmation page I did manage to use a little bit of 
 
 <img src="README assets/Screenshot 2024-10-16 215748.png" style="max-width: 50%;">
 
+## Lighthouse Reports
+
+### Performance
+The main attraction of this website is the cakes themselves, and so it makes sense to have lots of pictures of them. However, in an early iteration I realised that I had 20 JPEGs all averaging 4MB each, and so the opening performace was _terrible_. 
+
+I fed all of my images through [tinyPNG.com](https://www.tinypng.com) and managed to significantly reduce the overall load-time and the filesizes that needed to be downloaded.
+
+### Accessibility
+I took some time to add Aria labels to footer links that otherwise only contain an icons.
+
+<img src="./README assets/Totally Baked Lighthouse Report.png" style="max-width: 50%">
+
+## Responsive Design
