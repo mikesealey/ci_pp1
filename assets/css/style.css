@@ -24,12 +24,14 @@ body {
     border: 3px solid rgb(152, 186, 185);
     border-radius: 10px;
     max-width: 400px;
-    background-color: rgb(215, 194, 213)
+    background-color: rgb(215, 194, 213);
+
 }
 
 .nav-links-container a {
     text-decoration: none; 
-    color: rgb(152, 186, 185);
+    color: rgb(97, 117, 117);
+    background-color: white;
 }
 
 
