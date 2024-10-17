@@ -1,5 +1,5 @@
 /* Primary Green/blue - 152, 186, 185 */
-/* Secondary 215, 194, 213 */
+/* Secondary Pink/Purple 215, 194, 213 */
 
 div {
     max-width: 100%;
@@ -61,6 +61,12 @@ footer {
     max-width: 1250px;
     padding: 10px;
 
+}
+
+h1 {
+    color: rgb(152, 186, 185);
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 /* Homepage Gallery */
