@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100vh;
-    min-width: 100vw;
+    max-width: 100vw;
 }
 
 /* Logo & Nav */
@@ -25,10 +25,6 @@ body {
     border-radius: 10px;
     max-width: 400px;
     background-color: rgb(215, 194, 213)
-}
-
-.nav-links-container li {
-    /* border-radius: 0 !important; */
 }
 
 .nav-links-container a {
