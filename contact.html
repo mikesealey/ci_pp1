@@ -11,82 +11,84 @@
 <body>
     <nav>
         <div id="logo-img" class="row justify-content-center mb-2">
-          <img id="nav-logo" src="./assets/images/logo.jpg" alt="totally baked cake co logo">
+            <img id="nav-logo" src="./assets/images/logo.jpg" alt="totally baked cake co logo">
         </div>
         <div>
-          <h1 class="text-center">Totally Baked Cake Co.</h1>
-          <ul class="nav-links-container list-group list-group-horizontal justify-content-center gy-0 mx-auto">
-              <li class="list-group-item text-center flex-fill first-nav-item">
-                  <a href="index.html">Home</a>
-              </li>
-              <li class="list-group-item text-center flex-fill">::</li>
-              <li class="list-group-item text-center flex-fill">
-                  <a href="about.html">About</a>
-              </li>
-              <li class="list-group-item text-center flex-fill">::</li>
-              <li class="list-group-item text-center flex-fill last-nav-item">
-                  <a href="contact.html" class="current-page">Contact</a>
-              </li>
-          </ul>
-        </div>
-    </nav>
-        <section class="text-box rounded-3 mt-2 mb-2 mx-auto w-100 w-lg-80">
-                <h1 class="mt-4 mb-4">
-                    Contact Us
-                </h1>
-                
-                <form method="GET" action="confirmation.html" >
-                    <div class="form-row">
-                    </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6 mb-2">
-                            <label for="customer">Hi, my name is</label>
-                            <input type="text" class="form-control" id="customer" name="customer-name" placeholder="Bruce Bogtrotter" required>
-                        </div>
-                        <div class="form-group col-md-6 mb-2">
-                            <label for="enquiry-type">I'd like to know more about...</label>
-                            <select id="enquiry-type" class="form-control" name="enquiry-type" required>
-                                <option value="" selected disabled>Please select</option>
-                                <option value="general">Totally Baked Cake Co, in general</option>
-                                <option value="dietary">Dietary requirements or specifications</option>
-                                <option value="purchasing">Purchasing or commissioning a cake</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-12 mb-2">
-                            <label for="enquiry">Specifically, I'd like to know more about...</label>
-                            <textarea class="form-control" id="enquiry" name="enquiry-details" rows="5" placeholder="...the secret ingredients" required></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group col-md-6 mb-2">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="username@domain.com" required>
-                    </div>
-                      <div class="form-group mb-2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-        </section>
-        <footer>
-            <ul class="list-unstyled list-group list-group-horizontal">
-                <li class="list-group-item ">
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Find us on Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <h1 class="text-center">Totally Baked Cake Co.</h1>
+            <ul class="nav-links-container list-group list-group-horizontal justify-content-center gy-0 mx-auto">
+                <li class="list-group-item text-center flex-fill first-nav-item">
+                    <a href="index.html">Home</a>
                 </li>
-                <li class="list-group-item">
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <li class="list-group-item text-center flex-fill">::</li>
+                <li class="list-group-item text-center flex-fill">
+                    <a href="about.html">About</a>
                 </li>
-                <li class="list-group-item">
-                    <a href="https://www.x.com" target="_blank"  aria-label="Follow us on X (formerly twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://www.youtube.com" target="_blank" aria-label="Subscribe to us on YouTube"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://www.linkedin.com" target="_blank" aria-label="Connect with us on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://www.etsy.com" target="_blank" aria-label="Check out our shop on Etsy"><i class="fa-brands fa-etsy"></i></a>
+                <li class="list-group-item text-center flex-fill">::</li>
+                <li class="list-group-item text-center flex-fill last-nav-item">
+                    <a href="contact.html" class="current-page">Contact</a>
                 </li>
             </ul>
-        </footer><!-- End of Footer -->
+        </div>
+    </nav>
+    <section class="text-box rounded-3 mt-2 mb-2 mx-auto w-100 w-lg-80">
+        <h1 class="mt-4 mb-4">
+            Contact Us
+        </h1>
+        <!-- Contact Form -->
+        <form method="GET" action="confirmation.html" >
+            <div class="form-row">
+            </div>
+                <div class="form-row">
+                <div class="form-group col-md-6 mb-2">
+                    <label for="customer">Hi, my name is</label>
+                    <input type="text" class="form-control" id="customer" name="customer-name" placeholder="Bruce Bogtrotter" required>
+                </div>
+                <div class="form-group col-md-6 mb-2">
+                    <label for="enquiry-type">I'd like to know more about...</label>
+                    <select id="enquiry-type" class="form-control" name="enquiry-type" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="general">Totally Baked Cake Co, in general</option>
+                        <option value="dietary">Dietary requirements or specifications</option>
+                        <option value="purchasing">Purchasing or commissioning a cake</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-12 mb-2">
+                    <label for="enquiry">Specifically, I'd like to know more about...</label>
+                    <textarea class="form-control" id="enquiry" name="enquiry-details" rows="5" placeholder="...the secret ingredients" required></textarea>
+                </div>
+                </div>
+                <div class="form-group col-md-6 mb-2">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="username@domain.com" required>
+            </div>
+                <div class="form-group mb-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <!-- End of contact Form -->
+    </section>
+    <footer>
+        <ul class="list-unstyled list-group list-group-horizontal">
+            <li class="list-group-item ">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Find us on Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://www.x.com" target="_blank"  aria-label="Follow us on X (formerly twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://www.youtube.com" target="_blank" aria-label="Subscribe to us on YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://www.linkedin.com" target="_blank" aria-label="Connect with us on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://www.etsy.com" target="_blank" aria-label="Check out our shop on Etsy"><i class="fa-brands fa-etsy"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
 </body>
 </html>
