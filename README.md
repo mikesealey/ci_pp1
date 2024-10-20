@@ -135,3 +135,9 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
 * I should be able to find out more information about the origins of the bakery
 * I should be able to find out where the bakery is based
   - `about.html` 
+
+## Deployment
+This site has been deployed to Github Pages. The steps to deploy are as follows:
+  - In the Github repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshedwith a detailed ribbon display to incidate teh successful deployment.
