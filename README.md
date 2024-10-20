@@ -64,6 +64,7 @@ I took the example Static Backdrop modal and stripped a few things out out - I t
 I'd managed to get mixed up between versions of bootstrap - the attribute to dismiss a modal in certain versions Bootstrap is data-bs-dismiss="modal", but data-dismiss="modal" is the correct one for the version I'm using. That'll teach me to lift code out of the example in the documenation!
 
 ### Adding JavaScript
+#### Dynamic Logo and Nav
 The desktop version of Totally Baked Cake Co features a landing page with an oversized logo and navigation menu, that I wanted to shrink to a more typical size into the top-left of the screen once the user has begun to scroll.
 
 In order to do this I needed to first link `.js` file, and make use of the `document.getElementById()` function in JavaScript. I then need to add a class name to the element(s). 
@@ -76,12 +77,24 @@ I also need to tie into the "scroll" event with an event listener found in this 
 
 After trying my best to make this work for a long time, I decided in [this commit](https://github.com/mikesealey/ci_pp1/commit/d28be2d0ecbbe74212eb0097d7a4c6ed91451685) that the effort was not worth the reward. Although I had invisioned something more dynamic, two different approaches both returned unsacceptable results.
 
+#### User Feedback in Form Confirmation
 When adding in a form and confirmation page I did manage to use a little bit of JavaScript though - I noticed that all of the values submitted in contact.html were available as URL parameters in confirmation.html. [This post](https://sentry.io/answers/how-to-get-values-from-urls-in-javascript/) gave a very quick insight, and with some tinkering I was able to bring the parameters in, assign them to variables, and set them as the text in elements using document.getElementByID. 
 
 <img src="README assets/Query Screenshot.png" style="max-width: 50%;">
 
-## Lighthouse Reports & Validation
+## Features
+  - On all pages the user is met with an oversized logo, website title, and navigation. The navigation link for the page that is currently on display is emboldened to denote that the user is currently there.
+  - The homepage features a large image gallery showcasing some of the finest sweet-treats that Totally Baked Cake Co has to offer
+  - Each image in the gallery is clickable, and opens a modal containing a larger version of the image, a description, and some dietary specifications about the cake.
+  <img src="./README assets/modal_example.png" alt="example of the modal">
+  - The _About Us_ page explains the origins of the bakery, giving an authentic, home-bakery vibe.
+  - The _Contact_ page gives users the opportunity to get in tocuh for more information, or enquiry about comissioning a cake
+  <img src="./README assets/contact_example.png" alt="contact form">
+  - When a user successfully submits a contact-form they are directed towards `confirmation.html`, which pulls in the URL parameters and shows the values of the enquiry submitted.
+  <img src="./README assets/contact_confirmation_example.png" alt="an example of the confirmation shown when a form is successfully submitted.">
 
+
+## Lighthouse Reports & Validation
 ### Performance
 The main attraction of this website is the cakes themselves, and so it makes sense to have lots of pictures of them. However, in an early iteration I realised that I had 20 JPEGs all averaging 4MB each, and so the opening performace was _terrible_. 
 
@@ -117,7 +130,8 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
   <figcaption><em>Validation for Index, About, and Contact</em></figcaption>
 </figure>
 
-## Testing User Stories
+## Testing
+### Testing User Stories
 * I want to understand the purpose of the page when it loads
   - `index.html` On page load I am greeted with an introductory paragraph welcoming the user, and inviting them to explore more of the website
 
@@ -135,6 +149,14 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
 * I should be able to find out more information about the origins of the bakery
 * I should be able to find out where the bakery is based
   - `about.html` 
+
+### Additional testing
+* I have tried submitting the contact form with the following
+  - 3 completed fields, and one empty field
+  - 2 completed fields and 2 empty fields
+  - 1 completed field and 3 empty fields.
+  - All fields completed, but no email address provided in the email field.
+  - User testing identified the need for `maxlength` properties on text input fields 
 
 ## Deployment
 This site has been deployed to Github Pages. The steps to deploy are as follows:
