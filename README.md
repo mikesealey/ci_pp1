@@ -141,3 +141,34 @@ This site has been deployed to Github Pages. The steps to deploy are as follows:
   - In the Github repository, navigate to the Settings tab
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshedwith a detailed ribbon display to incidate teh successful deployment.
+
+## Credits
+### Images:
+The site logo has been taken from [Totally Baked Cake Co's facebook page](https://www.facebook.com/thetotallybakedcakeco/).
+
+The background image is a stock photo  that I found on [unsplash](https://unsplash.com/photos/white-snow-on-brown-soil-KMEqlxz3mKc), taken by [Nathan Dumlao](https://unsplash.com/@nate_dumlao).
+
+All of the cakes features in this project were baked either by my sister Lizzie, or my wife Natalie. 
+| Cake | Baker |
+| ------ | ------ |
+| Thick Cut Chocolate Brownies | Lizzie |
+| Christmas Menegue | Natalie |
+| Chocolate Orange Cheesecake | Natalie |
+| Strawberry & White Chocolate Cake | Natalie |
+| Glittery Blue Birthday Cake            | Natalie |
+| Pink and White Butterfly Birthday Cake | Natalie |
+| Raspberry Cheesecake                   | Natalie | 
+| Kinder Bueno Cheesecake                | Natalie |
+| Happy Hippo Cheesecake                 | Natalie |
+| Australia-themed cupcakes              | Natalie | 
+| Double Chocolate Cake                  | Natalie |
+| Rainbow Cake                           | Natalie |
+| Pink and Purple Birthday Cake          | Natalie | 
+| Kiss-themed Cake                       | Natalie |
+| Chocolate Tower Cake                   | Lizzie |
+| Pink Slices                            | Lizzie |
+| Tie Die themed Cupcakes                | Lizzie |
+| Carrot Cake                            | Natalie |
+| Rainbow Birthday Cake                  | Natalie |
+| Peppa Pig Birthday Cake                | Natalie |
+
