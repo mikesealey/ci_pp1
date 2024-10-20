@@ -74,9 +74,9 @@ After trying my best to make this work for a long time, I decided in [this commi
 
 When adding in a form and confirmation page I did manage to use a little bit of JavaScript though - I noticed that all of the values submitted in contact.html were available as URL parameters in confirmation.html. [This post](https://sentry.io/answers/how-to-get-values-from-urls-in-javascript/) gave a very quick insight, and with some tinkering I was able to bring the parameters in, assign them to variables, and set them as the text in elements using document.getElementByID. 
 
-<img src="README assets/Screenshot 2024-10-16 215748.png" style="max-width: 50%;">
+<img src="README assets/Query Screenshot.png" style="max-width: 50%;">
 
-## Lighthouse Reports
+## Lighthouse Reports & Validation
 
 ### Performance
 The main attraction of this website is the cakes themselves, and so it makes sense to have lots of pictures of them. However, in an early iteration I realised that I had 20 JPEGs all averaging 4MB each, and so the opening performace was _terrible_. 
@@ -84,8 +84,39 @@ The main attraction of this website is the cakes themselves, and so it makes sen
 I fed all of my images through [tinyPNG.com](https://www.tinypng.com) and managed to significantly reduce the overall load-time and the filesizes that needed to be downloaded.
 
 ### Accessibility
-I took some time to add Aria labels to footer links that otherwise only contain an icons.
+I took some time to add Aria labels to footer links that otherwise only contain an icons, which improved the accessibility score greatly.
 
 <img src="./README assets/Totally Baked Lighthouse Report.png" style="max-width: 50%">
 
-## Responsive Design
+I also found that my website title doesn't have adequate contrast using [https://wave.webaim.org/](https://wave.webaim.org/) 
+ 
+<img src="./README assets/Contrast Validation.png" style="max-width: 350px">
+
+A quick update later, and I can see that I now pass.
+
+<img src="./README assets/Web Accessibility Checks.png" style="max-height: 450px">
+
+### Code Validation
+I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'s HTML validator, and tackled each of the issues raised. I then passed my JavaScript file through [https://jshint.com/](https://jshint.com/) in order to ensure that the code was inline with standards. The information returned was warning me that using `const` is only available with ES6, and will incompatible with older browsers like Internet Explorer.  [Read more here](https://www.w3schools.com/js/js_es6.asp#mark_const)
+
+<figure style="border: 2px solid rgba(0,0,0,0.5); padding: 12px;">
+  <div>
+    <img src="./README assets/Index Validation.png" style="max-width: 50%;">
+    <img src="./README assets/About validation.png" style="max-width: 49%;">
+    
+  </div>
+  <div>
+  <img src="./README assets/Contact Validation.png" style="max-width: 33%">
+    <img src="./README assets/Confirmation Validation.png" style="max-width: 33%;">
+    <img src="./README assets/404 Validation.png" style="max-width: 33%;">
+  </div>
+  <figcaption><em>Validation for Index, About, and Contact</em></figcaption>
+</figure>
+
+
+
+
+
+
+### Bootstrap
+
