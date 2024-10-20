@@ -1,9 +1,11 @@
 # Totally Baked Cake Co.
 _A website dedicated to showing the finest baked goods in North Wales, as part of  a Level 5 Diploma in Web Application Development_ 
 
-This project will borrow heavily from the real life bakery business by the same name, run by my sister, but will not seek to replace any existing business page, nor will it make any guarantees of factual accuracy with regards to ingredients, dietary requirements, or calorie content.
+*Disclaimer: This project will borrow heavily from the real life bakery business by the same name, run by my sister, but will not seek to replace any existing business page, nor will it make any guarantees of factual accuracy with regards to ingredients, dietary requirements, or calorie content.*
 
-# Contents
+This website, Totally Baked Cake Co, is an online presence for a family-run home-bakery based in Flintshire, North Wales. The aims of this website are to provide a landing point for sales leads and interest generated both online and in person. Having a mobile friendly design layout means that people could be directed to the website during an in-person meeting and left to explore more options.
+
+## Contents
 * [User Stories](#user-stories)
 * [Design Considerations](#design-considerations)
   * [Creating a wireframe](#creating-a-wireframe)
@@ -21,15 +23,15 @@ This project will borrow heavily from the real life bakery business by the same 
 
 
 ## User Stories
-* As a user, I want to understand the purpose of the page when it loads
-* As a user, I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
-* As a user, I want to be able to see larger versions of the thumbnails
-* As a user, I want to be able to see a description of each of the cakes on offer
-* As a user, I want to know about specific dietary concerns (Gluten/Wheat, Dairy, Egg, etc)
-* As a user, I should be able to find contact details
-* As a user, I should be able to find out more information about the origins of the bakery
-* As a user, I should be able to find out where the bakery is
-* As a user, I should be able to submit an enquiry
+### As a user...
+* I want to understand the purpose of the page when it loads
+* I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
+* I want to be able to see larger versions of the thumbnails
+* I want to be able to see a description of each of the cakes on offer
+* I want to know about specific dietary concerns (Gluten/Wheat, Dairy, Egg, etc)
+* I should be able to submit an enquiry
+* I should be able to find out more information about the origins of the bakery
+* I should be able to find out where the bakery is based
 
 ## Design Considerations
 ### Creating a wireframe
@@ -119,4 +121,5 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
 
 
 ### Bootstrap
+
 
