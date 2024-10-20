@@ -35,13 +35,15 @@ This website, Totally Baked Cake Co, is an online presence for a family-run home
 
 ## Design Considerations
 ### Creating a wireframe
+
+* Colours
+  * The colours for this project are primarily <span style="background-color: rgb(152, 186, 185); color: black;"><strong>rgb(152, 186, 185)</strong></span> and <span style="background-color: rgb(215, 194, 213); color: black;"><strong>rgb(215, 194, 213)</strong></span>, combining with a simple white, often semi-transparrent in order to use some of the background image to add a little bit of texture to the background.
+
 When Designing the website for Totally Baked Cake Co, I knew that the real heroes of the design would be the cakes themselves, so a gallery was the obvious way to go. I wanted to make sure that the gallery would display correctly accross a variety of devices, so when I was working on the wireframe I made sure to plan for desktop, tablet, and mobile views. 
 
-The basic principle was that the images would have a 1:1 aspect ratio in order to more easily accomodate portrait and landscape source images. The images could then be displayed in a grid where the screen width determins how many images go on each row.
+The basic principle was that the images would have a 1:1 aspect ratio in order to more easily accomodate portrait and landscape source images. The images could then be displayed in a grid where the screen width determines how many images go on each row.
 
-![alt text](<README assets/Screenshot 2024-10-16 223130.png>)
-
-
+![alt text](<README assets/Wireframe.png>)
 
 ### Once building was underway
 I initially had an idea of having the logo and navigation form a hero image, and using an onScroll property of the window to resize or transform that to taket he place of a more typical logo in a header similar to that which would typically be found in most modern web applications. This turned out to be far too unreliable, and was ultimately scrapped. (Read more in [Adding JavaScript](#adding-javascript))
@@ -115,11 +117,21 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
   <figcaption><em>Validation for Index, About, and Contact</em></figcaption>
 </figure>
 
+## Testing User Stories
+* I want to understand the purpose of the page when it loads
+  - `index.html` On page load I am greeted with an introductory paragraph welcoming the user, and inviting them to explore more of the website
 
+* I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
+  - `index.html` contains a gallery of 20 images that _Totally Baked_ have made.
 
+* I want to be able to see larger versions of the thumbnails
+* I want to be able to see a description of each of the cakes on offer
+* I want to know about specific dietary concerns (Gluten/Wheat, Dairy, Egg, etc)
+  - Each of the images in the gallery of `index.html` can be clicked to view in a modal, including a detailed description and dietary specifications.
 
+* I should be able to submit an enquiry
+  - `contact.html` contains a contact form that allows the user to get in touch with an enquiry. Completing the form navigates to `confirmation.html` that shows the user the enquiry they have just submitted for peace of mind and positive confirmation.
 
-
-### Bootstrap
-
-
+* I should be able to find out more information about the origins of the bakery
+* I should be able to find out where the bakery is based
+  - `about.html` 
