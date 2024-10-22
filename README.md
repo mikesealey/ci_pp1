@@ -5,20 +5,35 @@ _A website dedicated to showing the finest baked goods in North Wales, as part o
 
 This website, Totally Baked Cake Co, is an online presence for a family-run home-bakery based in Flintshire, North Wales. The aims of this website are to provide a landing point for sales leads and interest generated both online and in person. Having a mobile friendly design layout means that people could be directed to the website during an in-person meeting and left to explore more options.
 
+![alt text](<README assets/responsive_screens.gif>)
+
 ## Contents
-* [User Stories](#user-stories)
-* [Design Considerations](#design-considerations)
-  * [Creating a wireframe](#creating-a-wireframe)
-* [Code Sources](#code-sources)
-  * [Mozilla Developer Network](#mozilla-developer-network-css-documentation)
-    * [Aspect Ratio and Object Fit](#aspect-ratio-and-object-fit)
-  * [Bootstrap Documentation](#bootstap-documentation)
-    * [Modals](#modals)
-  * [Adding JavaScript](#adding-javascript)
-* [Lighthouse Reports](#lighthouse-reports)
-  * [Performance](#performance)
-  * [Accessibility](#accessibility)
-* [Responsive Design](#responseive-design)
+- [Totally Baked Cake Co.](#totally-baked-cake-co)
+- [User Stories](#user-stories)
+  - [As a user...](#as-a-user)
+- [Design Considerations](#design-considerations)
+  - [Creating a wireframe](#creating-a-wireframe)
+  - [Once building was underway](#once-building-was-underway)
+- [Code Sources](#code-sources)
+  - [Mozilla Developer Network Documentation](#mozilla-developer-network-documentation)
+    - [Aspect Ratio and Object Fit](#aspect-ratio-and-object-fit)
+  - [Bootstrap Documentation](#bootstap-documentation)
+    - [Modals](#modals)
+  - [Adding JavaScript](#adding-javascript)
+    - [Dynamic Logo and Nav](#dynamic-logo-and-nav)
+    - [User Feedback in Form Confirmation](#user-feedback-in-form-confirmation)
+- [Features](#features)
+- [Lighthouse Reports & Validation](#lighthouse-reports--validation)
+  - [Performance](#performance)
+  - [Accessibility](#accessibility)
+  - [Code Validation](#code-validation)
+- [Testing](#testing)
+  - [Testing User Stories](#testing-user-stories)
+  - [Additional testing](#additional-testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  - [Images](#images)
+
 
 
 
@@ -43,7 +58,7 @@ When Designing the website for Totally Baked Cake Co, I knew that the real heroe
 
 The basic principle was that the images would have a 1:1 aspect ratio in order to more easily accomodate portrait and landscape source images. The images could then be displayed in a grid where the screen width determines how many images go on each row.
 
-![alt text](<README assets/Wireframe.png>)
+![Wireframe](<README assets/Wireframe.png>)
 
 ### Once building was underway
 I initially had an idea of having the logo and navigation form a hero image, and using an onScroll property of the window to resize or transform that to taket he place of a more typical logo in a header similar to that which would typically be found in most modern web applications. This turned out to be far too unreliable, and was ultimately scrapped. (Read more in [Adding JavaScript](#adding-javascript))
