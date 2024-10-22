@@ -1,5 +1,5 @@
 # Totally Baked Cake Co.
-_A website dedicated to showing the finest baked goods in North Wales, as part of  a Level 5 Diploma in Web Application Development_ 
+_A website dedicated to showing the finest baked goods in North Wales, as part of  a Level 5 Diploma in Web Application Development_
 
 *Disclaimer: This project will borrow heavily from the real life bakery business by the same name, run by my sister, but will not seek to replace any existing business page, nor will it make any guarantees of factual accuracy with regards to ingredients, dietary requirements, or calorie content.*
 
@@ -35,9 +35,6 @@ This website, Totally Baked Cake Co, is an online presence for a family-run home
 - [Credits](#credits)
   - [Images](#images)
 
-
-
-
 ## User Stories
 ### As a user...
 * I want to understand the purpose of the page when it loads
@@ -53,37 +50,36 @@ This website, Totally Baked Cake Co, is an online presence for a family-run home
 ### Creating a wireframe
 
 * Colours
-  * The colours for this project are primarily <span style="background-color: rgb(152, 186, 185); color: black;"><strong>rgb(152, 186, 185)</strong></span> and <span style="background-color: rgb(215, 194, 213); color: black;"><strong>rgb(215, 194, 213)</strong></span>, combining with a simple white, often semi-transparrent in order to use some of the background image to add a little bit of texture to the background.
+  * The colours for this project are primarily <span style="background-color: rgb(152, 186, 185); color: black;"><strong>rgb(152, 186, 185)</strong></span> and <span style="background-color: rgb(215, 194, 213); color: black;"><strong>rgb(215, 194, 213)</strong></span>, combining with a simple white, often semi-transparent in order to use some of the background image to add a little bit of texture to the background.
 
-When Designing the website for Totally Baked Cake Co, I knew that the real heroes of the design would be the cakes themselves, so a gallery was the obvious way to go. I wanted to make sure that the gallery would display correctly accross a variety of devices, so when I was working on the wireframe I made sure to plan for desktop, tablet, and mobile views. 
+When Designing the website for Totally Baked Cake Co, I knew that the real heroes of the design would be the cakes themselves, so a gallery was the obvious way to go. I wanted to make sure that the gallery would display correctly across a variety of devices, so when I was working on the wireframe I made sure to plan for desktop, tablet, and mobile views.
 
 The basic principle was that the images would have a 1:1 aspect ratio in order to more easily accomodate portrait and landscape source images. The images could then be displayed in a grid where the screen width determines how many images go on each row.
 
 ![Wireframe](<README assets/Wireframe.png>)
 
 ### Once building was underway
-I initially had an idea of having the logo and navigation form a hero image, and using an onScroll property of the window to resize or transform that to taket he place of a more typical logo in a header similar to that which would typically be found in most modern web applications. This turned out to be far too unreliable, and was ultimately scrapped. (Read more in [Adding JavaScript](#adding-javascript))
+I initially had an idea of having the logo and navigation form a hero image, and using an onScroll property of the window to resize or transform that to take he place of a more typical logo in a header similar to that which would typically be found in most modern web applications. This turned out to be far too unreliable, and was ultimately scrapped. (Read more in [Adding JavaScript](#adding-javascript))
 
 ## Code Sources
 ### Mozilla Developer Network Documentation
 #### Aspect Ratio and Object Fit
-In order to make perfectly square images, but maintain the reactiveness of the site accross different screensizes, I've used a width property of 100% to fill the column, and then found an `aspect-ratio` rule that I can give a 1/1 ratio.
+In order to make perfectly square images, but maintain the reactiveness of the site across different screen sizes, I've used a width property of 100% to fill the column, and then found an `aspect-ratio` rule that I can give a 1/1 ratio.
 https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
 
 The next step was to make the images hold their proportions, and simply hide their irregular shapes and resolutions, using `object-fit: cover`
 
-
-### Bootstap Documentation
+### Bootstrap Documentation
 #### Modals
 I took the example Static Backdrop modal and stripped a few things out out - I think this was intended for user-prompts but I'll be using it for simply displaying more information about the clicked-image.
 
-I'd managed to get mixed up between versions of bootstrap - the attribute to dismiss a modal in certain versions Bootstrap is data-bs-dismiss="modal", but data-dismiss="modal" is the correct one for the version I'm using. That'll teach me to lift code out of the example in the documenation!
+I'd managed to get mixed up between versions of bootstrap - the attribute to dismiss a modal in certain versions Bootstrap is data-bs-dismiss="modal", but data-dismiss="modal" is the correct one for the version I'm using. That'll teach me to lift code out of the example in the documentation!
 
 ### Adding JavaScript
 #### Dynamic Logo and Nav
 The desktop version of Totally Baked Cake Co features a landing page with an oversized logo and navigation menu, that I wanted to shrink to a more typical size into the top-left of the screen once the user has begun to scroll.
 
-In order to do this I needed to first link `.js` file, and make use of the `document.getElementById()` function in JavaScript. I then need to add a class name to the element(s). 
+In order to do this I needed to first link `.js` file, and make use of the `document.getElementById()` function in JavaScript. I then need to add a class name to the element(s).
 
 Two good examples that helped:
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
@@ -91,10 +87,10 @@ Two good examples that helped:
 
 I also need to tie into the "scroll" event with an event listener found in this example in the MDN docs [window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
 
-After trying my best to make this work for a long time, I decided in [this commit](https://github.com/mikesealey/ci_pp1/commit/d28be2d0ecbbe74212eb0097d7a4c6ed91451685) that the effort was not worth the reward. Although I had invisioned something more dynamic, two different approaches both returned unsacceptable results.
+After trying my best to make this work for a long time, I decided in [this commit](https://github.com/mikesealey/ci_pp1/commit/d28be2d0ecbbe74212eb0097d7a4c6ed91451685) that the effort was not worth the reward. Although I had envisioned something more dynamic, two different approaches both returned unacceptable results.
 
 #### User Feedback in Form Confirmation
-When adding in a form and confirmation page I did manage to use a little bit of JavaScript though - I noticed that all of the values submitted in contact.html were available as URL parameters in confirmation.html. [This post](https://sentry.io/answers/how-to-get-values-from-urls-in-javascript/) gave a very quick insight, and with some tinkering I was able to bring the parameters in, assign them to variables, and set them as the text in elements using document.getElementByID. 
+When adding in a form and confirmation page I did manage to use a little bit of JavaScript though - I noticed that all of the values submitted in contact.html were available as URL parameters in confirmation.html. [This post](https://sentry.io/answers/how-to-get-values-from-urls-in-javascript/) gave a very quick insight, and with some tinkering I was able to bring the parameters in, assign them to variables, and set them as the text in elements using document.getElementByID.
 
 <img src="README assets/Query Screenshot.png" style="max-width: 50%;">
 
@@ -102,7 +98,7 @@ When adding in a form and confirmation page I did manage to use a little bit of 
 It's always a nice touch to have a favicon, instead of the browser's default icon.
 ![alt text](<README assets/default_favicon.png>)
 
-I knew that it could be switched fairly easily, but I wasn't sure on the specifics. Luckilu I found [this entry](https://www.w3schools.com/html/html_favicon.asp) on W3Schools that helped.
+I knew that it could be switched fairly easily, but I wasn't sure on the specifics. Luckily I found [this entry](https://www.w3schools.com/html/html_favicon.asp) on W3Schools that helped.
 ![alt text](<README assets/better_favicon.png>)
 
 ## Features
@@ -111,24 +107,23 @@ I knew that it could be switched fairly easily, but I wasn't sure on the specifi
   - Each image in the gallery is clickable, and opens a modal containing a larger version of the image, a description, and some dietary specifications about the cake.
   <img src="./README assets/modal_example.png" alt="example of the modal">
   - The _About Us_ page explains the origins of the bakery, giving an authentic, home-bakery vibe.
-  - The _Contact_ page gives users the opportunity to get in tocuh for more information, or enquiry about comissioning a cake
+  - The _Contact_ page gives users the opportunity to get in touch for more information, or enquiry about commissioning a cake
   <img src="./README assets/contact_example.png" alt="contact form">
   - When a user successfully submits a contact-form they are directed towards `confirmation.html`, which pulls in the URL parameters and shows the values of the enquiry submitted.
   <img src="./README assets/contact_confirmation_example.png" alt="an example of the confirmation shown when a form is successfully submitted.">
 
-
 ## Lighthouse Reports & Validation
 ### Performance
-The main attraction of this website is the cakes themselves, and so it makes sense to have lots of pictures of them. However, in an early iteration I realised that I had 20 JPEGs all averaging 4MB each, and so the opening performace was _terrible_. 
+The main attraction of this website is the cakes themselves, and so it makes sense to have lots of pictures of them. However, in an early iteration I realised that I had 20 JPEGs all averaging 4MB each, and so the opening performance was _terrible_.
 
 I fed all of my images through [tinyPNG.com](https://www.tinypng.com) and managed to significantly reduce the overall load-time and the filesizes that needed to be downloaded.
 
 ### Accessibility
-I took some time to add Aria labels to footer links that otherwise only contain an icons, which improved the accessibility score greatly.
+I took some time to add Aria labels to footer links that otherwise only contain icons, which improved the accessibility score greatly.
 
 <img src="./README assets/Totally Baked Lighthouse Report.png" style="max-width: 50%">
 
-I also found that my website title doesn't have adequate contrast using [https://wave.webaim.org/](https://wave.webaim.org/) 
+I also found that my website title doesn't have adequate contrast using [https://wave.webaim.org/](https://wave.webaim.org/)
  
 <img src="./README assets/Contrast Validation.png" style="max-width: 350px">
 
@@ -144,7 +139,6 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
     <img src="./README assets/Index Validation.png" style="max-width: 33%">
     <img src="./README assets/About validation.png" style="max-width: 33%">
     <img src="./README assets/Contact Validation.png" style="max-width: 33%">
-    
   </div>
   <div>
     <img src="./README assets/Confirmation Validation.png" style="max-width: 49%;">
@@ -156,13 +150,13 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
 </figure>
 
 ### A note about the JS Validation
-The JS Validation tool identifs and warns about the use of `const` - this seems to be for compatability with older browsers. [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const#browser_compatibility) lists it's compatability with _all_ major modern browsers. [W3schools](https://www.w3schools.com/js/js_versions.asp) discusses the keyword `const` being added in 2015, and [here](https://www.w3schools.com/js/js_versions.asp#:~:text=Browser%20Support%20for%20ES6%20(2015)&text=Internet%20Explorer%20does%20not%20support%20ECMAScript%202015.) states that Internet Explorer is not compatable with ECMA6. This all boils down to say that this project (or likely just the confirmation page) is not compatible with Internet Explorer.
+The JS Validation tool identifies and warns about the use of `const` - this seems to be for compatibility with older browsers. [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const#browser_compatibility) lists it's compatibility with _all_ major modern browsers. [W3schools](https://www.w3schools.com/js/js_versions.asp) discusses the keyword `const` being added in 2015, and [here](https://www.w3schools.com/js/js_versions.asp#:~:text=Browser%20Support%20for%20ES6%20(2015)&text=Internet%20Explorer%20does%20not%20support%20ECMAScript%202015.) states that Internet Explorer is not compatable with ECMA6. This all boils down to say that this project (or likely just the confirmation page) is not compatible with Internet Explorer.
 
 ## Testing
 ### Testing User Stories
 * I want to understand the purpose of the page when it loads
   - `index.html` On page load I am greeted with an introductory paragraph welcoming the user, and inviting them to explore more of the website
-  - 
+  -
 
 * I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
   - `index.html` contains a gallery of 20 images that _Totally Baked_ have made.
@@ -177,7 +171,7 @@ The JS Validation tool identifs and warns about the use of `const` - this seems 
 
 * I should be able to find out more information about the origins of the bakery
 * I should be able to find out where the bakery is based
-  - `about.html` 
+  - `about.html`
 
 ### Additional testing
 * I have tried submitting the contact form with the following
@@ -185,12 +179,12 @@ The JS Validation tool identifs and warns about the use of `const` - this seems 
   - 2 completed fields and 2 empty fields
   - 1 completed field and 3 empty fields.
   - All fields completed, but no email address provided in the email field.
-  - User testing identified the need for `maxlength` properties on text input fields 
+  - User testing identified the need for `maxlength` properties on text input fields
 
-### Browser Compatability
-As discussed in [a note about the JS Validation](#a-note-about-the-js-validation) this project is not compatable with Internet Explorer.
+### Browser Compatibility
+As discussed in [a note about the JS Validation](#a-note-about-the-js-validation) this project is not compatible with Internet Explorer.
 
-I have tested all of the above functionality accross Opera, Edge, Chrome, and Firefox. (Left to right, top to bottom)
+I have tested all of the above functionality across Opera, Edge, Chrome, and Firefox. (Left to right, top to bottom)
 ![Totally Baked Cake Co website open on Opera, Edge, Chrome, and Firefox](<README assets/browser_testing.png>)
 ![Totally Baked Cake Co contact form confirmation open on Opera, Edge, Chrome, and Firefox](<README assets/browser_testing2.png>)
 
@@ -198,15 +192,14 @@ I have tested all of the above functionality accross Opera, Edge, Chrome, and Fi
 This site has been deployed to Github Pages. The steps to deploy are as follows:
   - In the Github repository, navigate to the Settings tab
   - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshedwith a detailed ribbon display to incidate teh successful deployment.
-
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 ## Credits
 ### Images:
 The site logo has been taken from [Totally Baked Cake Co's facebook page](https://www.facebook.com/thetotallybakedcakeco/).
 
 The background image is a stock photo  that I found on [unsplash](https://unsplash.com/photos/white-snow-on-brown-soil-KMEqlxz3mKc), taken by [Nathan Dumlao](https://unsplash.com/@nate_dumlao).
 
-All of the cakes features in this project were baked either by my sister Lizzie, or my wife Natalie. 
+All of the cakes features in this project were baked either by my sister Lizzie, or my wife Natalie.
 | Cake | Baker |
 | ------ | ------ |
 | Thick Cut Chocolate Brownies | Lizzie |
@@ -215,13 +208,13 @@ All of the cakes features in this project were baked either by my sister Lizzie,
 | Strawberry & White Chocolate Cake | Natalie |
 | Glittery Blue Birthday Cake            | Natalie |
 | Pink and White Butterfly Birthday Cake | Natalie |
-| Raspberry Cheesecake                   | Natalie | 
+| Raspberry Cheesecake                   | Natalie |
 | Kinder Bueno Cheesecake                | Natalie |
 | Happy Hippo Cheesecake                 | Natalie |
-| Australia-themed cupcakes              | Natalie | 
+| Australia-themed cupcakes              | Natalie |
 | Double Chocolate Cake                  | Natalie |
 | Rainbow Cake                           | Natalie |
-| Pink and Purple Birthday Cake          | Natalie | 
+| Pink and Purple Birthday Cake          | Natalie |
 | Kiss-themed Cake                       | Natalie |
 | Chocolate Tower Cake                   | Lizzie |
 | Pink Slices                            | Lizzie |
@@ -229,4 +222,3 @@ All of the cakes features in this project were baked either by my sister Lizzie,
 | Carrot Cake                            | Natalie |
 | Rainbow Birthday Cake                  | Natalie |
 | Peppa Pig Birthday Cake                | Natalie |
-
