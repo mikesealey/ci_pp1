@@ -22,6 +22,7 @@ This website, Totally Baked Cake Co, is an online presence for a family-run home
   - [Adding JavaScript](#adding-javascript)
     - [Dynamic Logo and Nav](#dynamic-logo-and-nav)
     - [User Feedback in Form Confirmation](#user-feedback-in-form-confirmation)
+  - [Favicon](#favicon)
 - [Features](#features)
 - [Lighthouse Reports & Validation](#lighthouse-reports--validation)
   - [Performance](#performance)
@@ -97,6 +98,13 @@ When adding in a form and confirmation page I did manage to use a little bit of 
 
 <img src="README assets/Query Screenshot.png" style="max-width: 50%;">
 
+## Favicon
+It's always a nice touch to have a favicon, instead of the browser's default icon.
+![alt text](<README assets/default_favicon.png>)
+
+I knew that it could be switched fairly easily, but I wasn't sure on the specifics. Luckilu I found [this entry](https://www.w3schools.com/html/html_favicon.asp) on W3Schools that helped.
+![alt text](<README assets/better_favicon.png>)
+
 ## Features
   - On all pages the user is met with an oversized logo, website title, and navigation. The navigation link for the page that is currently on display is emboldened to denote that the user is currently there.
   - The homepage features a large image gallery showcasing some of the finest sweet-treats that Totally Baked Cake Co has to offer
@@ -133,22 +141,28 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
 
 <figure style="border: 2px solid rgba(0,0,0,0.5); padding: 12px;">
   <div>
-    <img src="./README assets/Index Validation.png" style="max-width: 50%;">
-    <img src="./README assets/About validation.png" style="max-width: 49%;">
+    <img src="./README assets/Index Validation.png" style="max-width: 33%">
+    <img src="./README assets/About validation.png" style="max-width: 33%">
+    <img src="./README assets/Contact Validation.png" style="max-width: 33%">
     
   </div>
   <div>
-  <img src="./README assets/Contact Validation.png" style="max-width: 33%">
-    <img src="./README assets/Confirmation Validation.png" style="max-width: 33%;">
-    <img src="./README assets/404 Validation.png" style="max-width: 33%;">
+    <img src="./README assets/Confirmation Validation.png" style="max-width: 49%;">
+    <img src="./README assets/404 Validation.png" style="max-width: 49%;">
+    <img src="./README assets/JS Validation.png" style="max-width: 49%;">
+    <img src="./README assets/w3c css validation.png" style="max-width: 49%;">
   </div>
-  <figcaption><em>Validation for Index, About, and Contact</em></figcaption>
+  <figcaption><em>Validation for all 5 HTML pages, script.js and validation for style.css </em></figcaption>
 </figure>
+
+### A note about the JS Validation
+The JS Validation tool identifs and warns about the use of `const` - this seems to be for compatability with older browsers. [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const#browser_compatibility) lists it's compatability with _all_ major modern browsers. [W3schools](https://www.w3schools.com/js/js_versions.asp) discusses the keyword `const` being added in 2015, and [here](https://www.w3schools.com/js/js_versions.asp#:~:text=Browser%20Support%20for%20ES6%20(2015)&text=Internet%20Explorer%20does%20not%20support%20ECMAScript%202015.) states that Internet Explorer is not compatable with ECMA6. This all boils down to say that this project (or likely just the confirmation page) is not compatible with Internet Explorer.
 
 ## Testing
 ### Testing User Stories
 * I want to understand the purpose of the page when it loads
   - `index.html` On page load I am greeted with an introductory paragraph welcoming the user, and inviting them to explore more of the website
+  - 
 
 * I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
   - `index.html` contains a gallery of 20 images that _Totally Baked_ have made.
@@ -172,6 +186,13 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
   - 1 completed field and 3 empty fields.
   - All fields completed, but no email address provided in the email field.
   - User testing identified the need for `maxlength` properties on text input fields 
+
+### Browser Compatability
+As discussed in [a note about the JS Validation](#a-note-about-the-js-validation) this project is not compatable with Internet Explorer.
+
+I have tested all of the above functionality accross Opera, Edge, Chrome, and Firefox. (Left to right, top to bottom)
+![Totally Baked Cake Co website open on Opera, Edge, Chrome, and Firefox](<README assets/browser_testing.png>)
+![Totally Baked Cake Co contact form confirmation open on Opera, Edge, Chrome, and Firefox](<README assets/browser_testing2.png>)
 
 ## Deployment
 This site has been deployed to Github Pages. The steps to deploy are as follows:
