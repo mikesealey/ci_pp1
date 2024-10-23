@@ -31,6 +31,7 @@ This website, Totally Baked Cake Co, is an online presence for a family-run home
 - [Testing](#testing)
   - [Testing User Stories](#testing-user-stories)
   - [Additional testing](#additional-testing)
+  - [Functional Testing](#functional-testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
   - [Images](#images)
@@ -180,6 +181,83 @@ The JS Validation tool identifies and warns about the use of `const` - this seem
   - 1 completed field and 3 empty fields.
   - All fields completed, but no email address provided in the email field.
   - User testing identified the need for `maxlength` properties on text input fields
+
+### Functional Testing
+
+| Action | Expected Outcome | Pass/Fail |
+| ----- | ----- | ----- |
+| _From Standard Pages_ |  |  |
+| Clicking the link to the website | User should land on the homepage | Pass |
+| Clicking the link in the navigation bar from Home to About  | User should be directed to About | pass |
+| Clicking the link in the navigation bar from Home to Contact  | User should be directed to Contact | pass |
+| Clicking the link in the navigation bar from About to Home  | User should be directed to Home | pass |
+| Clicking the link in the navigation bar from About to Contact  | User should be directed to Contact | pass |
+| Clicking the link in the navigation bar from Contact to Home  | User should be directed to Home | pass |
+| Clicking the link in the navigation bar from Contact to About  | User should be directed to About | pass |
+| _From non-standard pages_ | ----- | ----- |
+| Clicking the link in the navigation bar from Confirmation to Home  | User should be directed to Home | pass |
+| Clicking the link in the navigation bar from Confirmation to About  | User should be directed to About | pass |
+| Clicking the link in the navigation bar from Confirmation to Contact  | User should be directed to Contact | pass |
+| Clicking the link in the navigation bar from 404 to Home  | User should be directed to Home | pass |
+| Clicking the link in the navigation bar from 404 to About  | User should be directed to About | pass |
+| Clicking the link in the navigation bar from 404 to Contact  | User should be directed to Contact | pass |
+| _From Home in footer_ | ----- | ----- |
+| Clicking facebook icon | Should open facebook in a new tab | pass |
+| Clicking instagram icon | Should open instagram in a new tab | pass |
+| Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
+| Clicking Youtube icon | Should open Youtube in a new tab | pass |
+| Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
+| Clicking Etsy icon | Should open Etsy in a new tab | pass |
+| _From About in footer_ | ----- | ----- |
+| Clicking facebook icon | Should open facebook in a new tab | pass |
+| Clicking instagram icon | Should open instagram in a new tab | pass |
+| Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
+| Clicking Youtube icon | Should open Youtube in a new tab | pass |
+| Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
+| Clicking Etsy icon | Should open Etsy in a new tab | pass |
+| _From Contact in footer_ | ----- | ----- |
+| Clicking facebook icon | Should open facebook in a new tab | pass |
+| Clicking instagram icon | Should open instagram in a new tab | pass |
+| Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
+| Clicking Youtube icon | Should open Youtube in a new tab | pass |
+| Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
+| Clicking Etsy icon | Should open Etsy in a new tab | pass |
+| _From Confirmation in footer_ | ----- | ----- |
+| Clicking facebook icon | Should open facebook in a new tab | pass |
+| Clicking instagram icon | Should open instagram in a new tab | pass |
+| Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
+| Clicking Youtube icon | Should open Youtube in a new tab | pass |
+| Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
+| Clicking Etsy icon | Should open Etsy in a new tab | pass |
+| _From 404 in footer_ | ----- | ----- |
+| Clicking facebook icon | Should open facebook in a new tab | pass |
+| Clicking instagram icon | Should open instagram in a new tab | pass |
+| Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
+| Clicking Youtube icon | Should open Youtube in a new tab | pass |
+| Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
+| Clicking Etsy icon | Should open Etsy in a new tab | pass |
+| _Modals in the gallery_  | ----- | ----- |
+| Clicking Picture of Thick Cut Chocolate Brownie | Should open Thick Cut Chocolate Brownie modal | pass |
+| Clicking Picture of Christmas Wreath Merengue | Should open Christmas Wreath Merengue modal | pass |
+| Clicking Picture of Chocolate Orange Cake | Should open Chocolate Orange Cake modal | pass |
+| Clicking Picture of Strawberry and White Chocolate Cake | Should open Strawberry and White Chocolate Cake modal | pass |
+| Clicking Picture of Sparkly Blue Birthday Cake | Should open Sparkly Blue Birthday Cake modal | pass |
+| Clicking Picture of Pink and White Butterfly Birthday Cake | Should open Pink and White Butterfly Birthday Cake modal | pass |
+| Clicking Picture of Raspberry Cheesecake | Should open Raspberry Cheesecake modal | pass |
+| Clicking Picture of Kinder Bueno Cheesecake | Should open Kinder Bueno Cheesecake modal | pass |
+| Clicking Picture of Happy Hippo Cheesecake | Should open Happy Hippo Cheesecake modal | pass |
+| Clicking Picture of Australia-themed cupcakes | Should open Australia-themed cupcakes modal | pass |
+| Clicking Picture of Double Chocolate Cake | Should open Double Chocolate Cake modal | pass |
+| Clicking Picture of Rainbow Cake | Should open Rainbow Cake modal | pass |
+| Clicking Picture of Pink and Purple Birthday Cake | Should open Pink and Purple Birthday Cake modal | pass |
+| Clicking Picture of Kiss-themed Cake | Should open Kiss-themed Cake modal | pass |
+| Clicking Picture of Chocolate Tower Cake | Should open Chocolate Tower Cake modal | pass |
+| Clicking Picture of Pink Slices | Should open Pink Slices modal | pass |
+| Clicking Picture of Tie Dye themed Cupcakes | Should open Tie Dye themed Cupcakes modal | pass |
+| Clicking Picture of Carrot Cake | Should open Carrot Cake modal | pass |
+| Clicking Picture of Rainbow Birthday Cake | Should open Rainbow Birthday Cake modal | pass |
+| Clicking Picture of Peppa Pig Birthday Cake | Should open Peppa Pig Birthday Cake modal | pass |
+
 
 ### Browser Compatibility
 As discussed in [a note about the JS Validation](#a-note-about-the-js-validation) this project is not compatible with Internet Explorer.
