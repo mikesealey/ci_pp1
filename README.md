@@ -292,8 +292,27 @@ I have tested all of the above functionality across Opera, Edge, Chrome, and Fir
 ## Deployment
 This site has been deployed to Github Pages. The steps to deploy are as follows:
   - In the Github repository, navigate to the Settings tab
+  - In the menu of the left under "Code and automation" visit "Pages"
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+## Cloning this repo
+You may wish to clone this repo to work on it yourself
+- At the top of the page above the file-list, click the "Code" button
+- Copy the URL `https://github.com/mikesealey/ci_pp1.git`
+- On the command line, navigate to where you want to clone this repository
+- run the following command
+    `git clone https://github.com/mikesealey/ci_pp1.git`
+
+![Clone Repo screenshot from github](<README assets/clone_repo.png>)
+
+## Forking this repo
+You may also wish to fork this repo to develop it further for your own needs
+- In the top bar, click "Fork"
+- Choose the github account or organisation where you want to fork the repository
+- Github will now create a copy (or _fork_) of the repository in your account.
+![fork repo screenshot from gitub](<README assets/fork_repo.png>)
+
 ## Credits
 ### Images:
 The site logo has been taken from [Totally Baked Cake Co's facebook page](https://www.facebook.com/thetotallybakedcakeco/).
