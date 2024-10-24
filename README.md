@@ -118,11 +118,24 @@ I knew that it could be switched fairly easily, but I wasn't sure on the specifi
 The main attraction of this website is the cakes themselves, and so it makes sense to have lots of pictures of them. However, in an early iteration I realised that I had 20 JPEGs all averaging 4MB each, and so the opening performance was _terrible_.
 
 I fed all of my images through [tinyPNG.com](https://www.tinypng.com) and managed to significantly reduce the overall load-time and the filesizes that needed to be downloaded.
+![alt text](<README assets/Totally Baked tinyPNG savings.png>)
 
 ### Accessibility
 I took some time to add Aria labels to footer links that otherwise only contain icons, which improved the accessibility score greatly.
 
-<img src="./README assets/Totally Baked Lighthouse Report.png" style="max-width: 50%">
+<figure style="border: 2px solid rgba(0,0,0,0.5); padding: 12px;">
+  <div>
+    <img src="./README assets/lighthouse_index.png" style="max-width: 49%">
+    <img src="./README assets/lighthouse_about.png" style="max-width: 50%">
+  </div>a
+  <div>
+    <img src="./README assets/lighthouse_contact.png" style="max-width: 33%">
+    <img src="./README assets/lighthouse_confirmation.png" style="max-width: 33%">
+    <img src="./README assets/lighthouse_404.png" style="max-width: 33%">
+  </div>
+  <figcaption><em>Lighthouse for all 5 HTML pages </em></figcaption>
+</figure>
+
 
 I also found that my website title doesn't have adequate contrast using [https://wave.webaim.org/](https://wave.webaim.org/)
  
@@ -130,7 +143,11 @@ I also found that my website title doesn't have adequate contrast using [https:/
 
 A quick update later, and I can see that I now pass.
 
-<img src="./README assets/Web Accessibility Checks.png" style="max-height: 450px">
+<img src="./README assets/wave_index.png" style="max-height: 450px">
+<img src="./README assets/wave_about.png" style="max-height: 450px">
+<img src="./README assets/wave_contact.png" style="max-height: 450px">
+<img src="./README assets/wave_confirmation.png" style="max-height: 450px">
+<img src="./README assets/wave_404.png" style="max-height: 450px">
 
 ### Code Validation
 I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'s HTML validator, and tackled each of the issues raised. I then passed my JavaScript file through [https://jshint.com/](https://jshint.com/) in order to ensure that the code was inline with standards. The information returned was warning me that using `const` is only available with ES6, and will incompatible with older browsers like Internet Explorer.  [Read more here](https://www.w3schools.com/js/js_es6.asp#mark_const)
@@ -186,7 +203,7 @@ The JS Validation tool identifies and warns about the use of `const` - this seem
 
 | Action | Expected Outcome | Pass/Fail |
 | ----- | ----- | ----- |
-| _From Standard Pages_ |  |  |
+| <h4>_From Standard Pages_</h4> |  |  |
 | Clicking the link to the website | User should land on the homepage | Pass |
 | Clicking the link in the navigation bar from Home to About  | User should be directed to About | pass |
 | Clicking the link in the navigation bar from Home to Contact  | User should be directed to Contact | pass |
@@ -194,49 +211,49 @@ The JS Validation tool identifies and warns about the use of `const` - this seem
 | Clicking the link in the navigation bar from About to Contact  | User should be directed to Contact | pass |
 | Clicking the link in the navigation bar from Contact to Home  | User should be directed to Home | pass |
 | Clicking the link in the navigation bar from Contact to About  | User should be directed to About | pass |
-| _From non-standard pages_ | ----- | ----- |
+| <h4>_From non-standard pages_</h4> |  |  |
 | Clicking the link in the navigation bar from Confirmation to Home  | User should be directed to Home | pass |
 | Clicking the link in the navigation bar from Confirmation to About  | User should be directed to About | pass |
 | Clicking the link in the navigation bar from Confirmation to Contact  | User should be directed to Contact | pass |
 | Clicking the link in the navigation bar from 404 to Home  | User should be directed to Home | pass |
 | Clicking the link in the navigation bar from 404 to About  | User should be directed to About | pass |
 | Clicking the link in the navigation bar from 404 to Contact  | User should be directed to Contact | pass |
-| _From Home in footer_ | ----- | ----- |
+| <h4>_From Home in footer_</h4> | ----- | ----- |
 | Clicking facebook icon | Should open facebook in a new tab | pass |
 | Clicking instagram icon | Should open instagram in a new tab | pass |
 | Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
 | Clicking Youtube icon | Should open Youtube in a new tab | pass |
 | Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
 | Clicking Etsy icon | Should open Etsy in a new tab | pass |
-| _From About in footer_ | ----- | ----- |
+| <h4>_From About in footer_</h4> | ----- | ----- |
 | Clicking facebook icon | Should open facebook in a new tab | pass |
 | Clicking instagram icon | Should open instagram in a new tab | pass |
 | Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
 | Clicking Youtube icon | Should open Youtube in a new tab | pass |
 | Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
 | Clicking Etsy icon | Should open Etsy in a new tab | pass |
-| _From Contact in footer_ | ----- | ----- |
+| <h4>_From Contact in footer_</h4> | ----- | ----- |
 | Clicking facebook icon | Should open facebook in a new tab | pass |
 | Clicking instagram icon | Should open instagram in a new tab | pass |
 | Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
 | Clicking Youtube icon | Should open Youtube in a new tab | pass |
 | Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
 | Clicking Etsy icon | Should open Etsy in a new tab | pass |
-| _From Confirmation in footer_ | ----- | ----- |
+| <h4>_From Confirmation in footer_</h4> | ----- | ----- |
 | Clicking facebook icon | Should open facebook in a new tab | pass |
 | Clicking instagram icon | Should open instagram in a new tab | pass |
 | Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
 | Clicking Youtube icon | Should open Youtube in a new tab | pass |
 | Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
 | Clicking Etsy icon | Should open Etsy in a new tab | pass |
-| _From 404 in footer_ | ----- | ----- |
+| <h4>_From 404 in footer_</h4> | ----- | ----- |
 | Clicking facebook icon | Should open facebook in a new tab | pass |
 | Clicking instagram icon | Should open instagram in a new tab | pass |
 | Clicking X (twitter) icon | Should open X (twitter) in a new tab | pass |
 | Clicking Youtube icon | Should open Youtube in a new tab | pass |
 | Clicking LinkedIn icon | Should open LinkedIn in a new tab | pass |
 | Clicking Etsy icon | Should open Etsy in a new tab | pass |
-| _Modals in the gallery_  | ----- | ----- |
+| <h4>_Modals in the gallery_</h4>  | ----- | ----- |
 | Clicking Picture of Thick Cut Chocolate Brownie | Should open Thick Cut Chocolate Brownie modal | pass |
 | Clicking Picture of Christmas Wreath Merengue | Should open Christmas Wreath Merengue modal | pass |
 | Clicking Picture of Chocolate Orange Cake | Should open Chocolate Orange Cake modal | pass |
