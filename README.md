@@ -167,6 +167,12 @@ I passed each of my 5 HTML files through [w3.org](https://validator.w3.org/nu/)'
   <figcaption><em>Validation for all 5 HTML pages, script.js and validation for style.css </em></figcaption>
 </figure>
 
+
+### A note about HTML Validation
+Interestingly, when using the more semantic `<section>` tag, the validation tool put up a warning - it seems that sections prefer to have `<h2>` - `<h6>` subheadings, and in this case in order to wrap the gallery it made more sense to the validation tool to use the catch-all `<div>` tag for the gallery.
+
+<img src="./README assets/semantic_html.png" alt="HTML Validation warning about using section tags" style="width: 50%;">
+
 ### A note about the JS Validation
 The JS Validation tool identifies and warns about the use of `const` - this seems to be for compatibility with older browsers. [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const#browser_compatibility) lists it's compatibility with _all_ major modern browsers. [W3schools](https://www.w3schools.com/js/js_versions.asp) discusses the keyword `const` being added in 2015, and [here](https://www.w3schools.com/js/js_versions.asp#:~:text=Browser%20Support%20for%20ES6%20(2015)&text=Internet%20Explorer%20does%20not%20support%20ECMAScript%202015.) states that Internet Explorer is not compatable with ECMA6. This all boils down to say that this project (or likely just the confirmation page) is not compatible with Internet Explorer.
 
