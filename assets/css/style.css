@@ -137,3 +137,8 @@ h1 {
 .modal-title {
     border: none;
 }
+
+.submit-button {
+    background-color: rgb(152, 186, 185);
+    border: none;
+}
