@@ -181,22 +181,26 @@ The JS Validation tool identifies and warns about the use of `const` - this seem
 ### Testing User Stories
 * I want to understand the purpose of the page when it loads
   - `index.html` On page load I am greeted with an introductory paragraph welcoming the user, and inviting them to explore more of the website
-  -
+ ![Helping users understand the page](<README assets/understand_page.png>) 
 
 * I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
   - `index.html` contains a gallery of 20 images that _Totally Baked_ have made.
+![thumbnail gallery](<README assets/thumbnail_gallery.png>)
 
 * I want to be able to see larger versions of the thumbnails
 * I want to be able to see a description of each of the cakes on offer
 * I want to know about specific dietary concerns (Gluten/Wheat, Dairy, Egg, etc)
   - Each of the images in the gallery of `index.html` can be clicked to view in a modal, including a detailed description and dietary specifications.
+![example of modal](<README assets/modal_example.png>)
 
 * I should be able to submit an enquiry
   - `contact.html` contains a contact form that allows the user to get in touch with an enquiry. Completing the form navigates to `confirmation.html` that shows the user the enquiry they have just submitted for peace of mind and positive confirmation.
+  ![Contact form example](<README assets/contact_example.png>)
 
 * I should be able to find out more information about the origins of the bakery
 * I should be able to find out where the bakery is based
   - `about.html`
+![screenshot of the about page](<README assets/about_screenshot.png>)
 
 ### Additional testing
 * I have tried submitting the contact form with the following
