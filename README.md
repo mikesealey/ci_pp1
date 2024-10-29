@@ -56,8 +56,9 @@ This website, Totally Baked Cake Co, is an online presence for a family-run home
 When Designing the website for Totally Baked Cake Co, I knew that the real heroes of the design would be the cakes themselves, so a gallery was the obvious way to go. I wanted to make sure that the gallery would display correctly across a variety of devices, so when I was working on the wireframe I made sure to plan for desktop, tablet, and mobile views.
 
 The basic principle was that the images would have a 1:1 aspect ratio in order to more easily accomodate portrait and landscape source images. The images could then be displayed in a grid where the screen width determines how many images go on each row.
-
 ![Wireframe](<README assets/Wireframe.png>)
+
+You can download and view the wireframe [here](<README assets/totally_baked_wireframe.bmpr>) (you will need your own version of Balsamic Wireframes or another program that can open .bmpr files)
 
 ### Once building was underway
 I initially had an idea of having the logo and navigation form a hero image, and using an onScroll property of the window to resize or transform that to take he place of a more typical logo in a header similar to that which would typically be found in most modern web applications. This turned out to be far too unreliable, and was ultimately scrapped. (Read more in [Adding JavaScript](#adding-javascript))
