@@ -5,7 +5,7 @@ _A website dedicated to showing the finest baked goods in North Wales, as part o
 
 This website, Totally Baked Cake Co, is an online presence for a family-run home-bakery based in Flintshire, North Wales. The aims of this website are to provide a landing point for sales leads and interest generated both online and in person. Having a mobile friendly design layout means that people could be directed to the website during an in-person meeting and left to explore more options.
 
-![alt text](<README assets/responsive_screens.gif>)
+![A gif displaying the Totally Baked Cake Co website on a variety of different devices and screen-sizes](<README assets/responsive_screens.gif>)
 
 ## Contents
 - [Totally Baked Cake Co.](#totally-baked-cake-co)
@@ -56,7 +56,8 @@ This website, Totally Baked Cake Co, is an online presence for a family-run home
 When Designing the website for Totally Baked Cake Co, I knew that the real heroes of the design would be the cakes themselves, so a gallery was the obvious way to go. I wanted to make sure that the gallery would display correctly across a variety of devices, so when I was working on the wireframe I made sure to plan for desktop, tablet, and mobile views.
 
 The basic principle was that the images would have a 1:1 aspect ratio in order to more easily accomodate portrait and landscape source images. The images could then be displayed in a grid where the screen width determines how many images go on each row.
-![Wireframe](<README assets/Wireframe.png>)
+
+![Wireframe](<README assets/wireframe.png>)
 
 You can download and view the wireframe [here](<README assets/totally_baked_wireframe.bmpr>) (you will need your own version of Balsamic Wireframes or another program that can open .bmpr files)
 
@@ -94,14 +95,14 @@ After trying my best to make this work for a long time, I decided in [this commi
 #### User Feedback in Form Confirmation
 When adding in a form and confirmation page I did manage to use a little bit of JavaScript though - I noticed that all of the values submitted in contact.html were available as URL parameters in confirmation.html. [This post](https://sentry.io/answers/how-to-get-values-from-urls-in-javascript/) gave a very quick insight, and with some tinkering I was able to bring the parameters in, assign them to variables, and set them as the text in elements using document.getElementByID.
 
-<img src="README assets/Query Screenshot.png" style="max-width: 50%;">
+<img src="README assets/query_screenshot.png" style="max-width: 50%;">
 
 ## Favicon
 It's always a nice touch to have a favicon, instead of the browser's default icon.
-![alt text](<README assets/default_favicon.png>)
+![Example of the default favicon](<README assets/default_favicon.png>)
 
 I knew that it could be switched fairly easily, but I wasn't sure on the specifics. Luckily I found [this entry](https://www.w3schools.com/html/html_favicon.asp) on W3Schools that helped.
-![alt text](<README assets/better_favicon.png>)
+![Improved favicon, now including the Totally Baked Cake Co logo](<README assets/better_favicon.png>)
 
 ## Features
   - On all pages the user is met with an oversized logo, website title, and navigation. The navigation link for the page that is currently on display is emboldened to denote that the user is currently there.
@@ -119,7 +120,7 @@ I knew that it could be switched fairly easily, but I wasn't sure on the specifi
 The main attraction of this website is the cakes themselves, and so it makes sense to have lots of pictures of them. However, in an early iteration I realised that I had 20 JPEGs all averaging 4MB each, and so the opening performance was _terrible_.
 
 I fed all of my images through [tinyPNG.com](https://www.tinypng.com) and managed to significantly reduce the overall load-time and the filesizes that needed to be downloaded.
-![alt text](<README assets/Totally Baked tinyPNG savings.png>)
+![Showing the savings TinyPNG have helped me make](<README assets/totally_baked_tinypng_savings.png>)
 
 ### Accessibility
 I took some time to add Aria labels to footer links that otherwise only contain icons, which improved the accessibility score greatly.
@@ -181,25 +182,30 @@ The JS Validation tool identifies and warns about the use of `const` - this seem
 ### Testing User Stories
 * I want to understand the purpose of the page when it loads
   - `index.html` On page load I am greeted with an introductory paragraph welcoming the user, and inviting them to explore more of the website
+  
  ![Helping users understand the page](<README assets/understand_page.png>) 
 
 * I want to browse a thumbnail gallery of cakes so that I can visually explore the type of products provided
   - `index.html` contains a gallery of 20 images that _Totally Baked_ have made.
+
 ![thumbnail gallery](<README assets/thumbnail_gallery.png>)
 
 * I want to be able to see larger versions of the thumbnails
 * I want to be able to see a description of each of the cakes on offer
 * I want to know about specific dietary concerns (Gluten/Wheat, Dairy, Egg, etc)
   - Each of the images in the gallery of `index.html` can be clicked to view in a modal, including a detailed description and dietary specifications.
+
 ![example of modal](<README assets/modal_example.png>)
 
 * I should be able to submit an enquiry
   - `contact.html` contains a contact form that allows the user to get in touch with an enquiry. Completing the form navigates to `confirmation.html` that shows the user the enquiry they have just submitted for peace of mind and positive confirmation.
+
   ![Contact form example](<README assets/contact_example.png>)
 
 * I should be able to find out more information about the origins of the bakery
 * I should be able to find out where the bakery is based
   - `about.html`
+
 ![screenshot of the about page](<README assets/about_screenshot.png>)
 
 ### Additional testing
