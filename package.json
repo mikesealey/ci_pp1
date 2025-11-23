@@ -1,0 +1,22 @@
+{
+  "name": "ci_pp1",
+  "version": "1.0.0",
+  "description": "_A website dedicated to showing the finest baked goods in North Wales, as part of  a Level 5 Diploma in Web Application Development_",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikesealey/ci_pp1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikesealey/ci_pp1/issues"
+  },
+  "homepage": "https://github.com/mikesealey/ci_pp1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  }
+}
