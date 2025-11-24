@@ -1,13 +1,21 @@
 import { test, expect } from '@playwright/test';
 
-const URLs = [
-  "http://127.0.0.1:5500/index.html",
-  "http://127.0.0.1:5500/about.html",
-  "http://127.0.0.1:5500/contact.html",
-  "http://127.0.0.1:5500/confirmation.html",
-  "http://127.0.0.1:5500/404.html"
-]
+const URLsObject = {
+  "home": "http://localhost:8080//index.html",
+  "about": "http://localhost:8080//about.html",
+  "contact": "http://localhost:8080//contact.html",
+  "confirmation": "http://localhost:8080//confirmation.html",
+  "404": "http://localhost:8080//404.html"
+}
 
+const testObject = {
+  "customer-name": "William Shakespear",
+  "enquiry-type": "purchasing",
+  "enquiry-details": "Infinite monkeys and infinite typewriters",
+  "email": "william.shakespear1564@theglobetheare.co.uk"
+}
+
+const URLs = Object.values(URLsObject)
 
 URLs.forEach((url) => {
   test(`Tests ${url} for Title, H1, Nav`, async ({ page }) => {
@@ -22,22 +30,28 @@ URLs.forEach((url) => {
       await expect(navLinks).toContainText(["Home", "About", "Contact"])
   });
 })
-
-
-// Fetch the right things from the URL params
-test("Tests URL parameters are passed into confirmation screen", async ({page}) => {
-  const testObject = {
-    "customer-name": "Mike",
-    "enquiry-type": "general",
-    "enquiry-details": "enquiry details go here",
-    "email": "mikesealey@hotmail.com"
-  }
-
-  // Expected to need to URI encode the enquiry details, but it wasn't necessary
-  await page.goto(`http://127.0.0.1:5500/confirmation.html?customer-name=${testObject['customer-name']}&enquiry-type=${testObject['enquiry-type']}&enquiry-details=${testObject['enquiry-details']}&email=${testObject.email}`)
-})
   
-// Should also try navigating to the Contact page, writing something in, submitting it, and checking that the next page has it.
+// Submit enquiry on Contact - check the correct values are submitted and displayed on confirmation
+test("Pass values into Contact form and check they surface on Confirmation", async ({page}) => {
+  await page.goto(URLsObject.contact)
+  // Input values into form
+  await page.getByTestId('customer-name').fill(testObject['customer-name'])
+  await page.getByTestId('enquiry-type').selectOption(testObject['enquiry-type'])
+  await page.getByTestId('enquiry-details').fill(testObject['enquiry-details'])
+  await page.getByTestId('email').fill(testObject.email)
 
+  // Submit Form
+  await Promise.all([
+    page.getByTestId('submit-contact-form').click()
+  ]);
 
+  // Check we've navigated to confirmation page
+  const urlParams = new URLSearchParams(testObject)
+  await expect(page).toHaveURL(`${URLsObject.confirmation}?${urlParams}`)
 
+  // Check values in Confirmation page
+  await expect(page.getByTestId("customer-name")).toHaveText(testObject['customer-name']);
+  await expect(page.getByTestId("enquiry-type")).toHaveText(testObject['enquiry-type']);
+  await expect(page.getByTestId("enquiry-details")).toHaveText(testObject['enquiry-details']);
+  await expect(page.getByTestId("email")).toHaveText(testObject.email);
+})
