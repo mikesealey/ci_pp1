@@ -17,7 +17,8 @@
   "homepage": "https://github.com/mikesealey/ci_pp1#readme",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.9.1"
+    "@types/node": "^24.9.1",
+    "serve": "^14.2.5"
   },
   "dependencies": {
     "dotenv": "^17.2.3"
