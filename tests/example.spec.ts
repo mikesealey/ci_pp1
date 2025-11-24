@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
 
 const URLsObject = {
-  "home": "http://localhost:8080//index.html",
-  "about": "http://localhost:8080//about.html",
-  "contact": "http://localhost:8080//contact.html",
-  "confirmation": "http://localhost:8080//confirmation.html",
-  "404": "http://localhost:8080//404.html"
+  "home": "/index.html",
+  "about": "/about.html",
+  "contact": "/contact.html",
+  "confirmation": "/confirmation.html",
+  "404": "/404.html"
 }
 
 const testObject = {
