@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     env:
-      BASE_URL: https://mikesealey.github.io/ci_pp1
+      BASE_URL: process.env.BASE_URL || "http://127.0.0.1:5500"
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
